@@ -71,7 +71,9 @@ extension ContentView {
                 
                 List {
                     ForEach(courses) { course in
-                        Text(course.name ?? "unknown course name")
+                        NavigationLink(destination: CourseView(course: course, viewContext: viewContext)) {
+                            Text(course.name ?? "unknown course name")
+                        }
                         
                     }.onDelete(perform: deleteCourse)
                 }
