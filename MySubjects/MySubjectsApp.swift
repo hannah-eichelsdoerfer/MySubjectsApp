@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct MySubjectsApp: App {
+    let persistenceController = PersitenceController.shared
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

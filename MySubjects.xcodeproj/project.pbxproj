@@ -14,6 +14,10 @@
 		18BE5D0729FB6D0E0041158E /* MySubjectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE5D0629FB6D0E0041158E /* MySubjectsTests.swift */; };
 		18BE5D1129FB6D0E0041158E /* MySubjectsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE5D1029FB6D0E0041158E /* MySubjectsUITests.swift */; };
 		18BE5D1329FB6D0E0041158E /* MySubjectsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE5D1229FB6D0E0041158E /* MySubjectsUITestsLaunchTests.swift */; };
+		18BE5D2129FB6D3F0041158E /* Subjects.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18BE5D1F29FB6D3F0041158E /* Subjects.xcdatamodeld */; };
+		18BE5D2329FB6D4E0041158E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE5D2229FB6D4E0041158E /* Persistence.swift */; };
+		18BE5D2529FB993D0041158E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE5D2429FB993D0041158E /* SearchView.swift */; };
+		18BE5D2729FB9FCB0041158E /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE5D2629FB9FCB0041158E /* CourseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		18BE5D0C29FB6D0E0041158E /* MySubjectsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySubjectsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BE5D1029FB6D0E0041158E /* MySubjectsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySubjectsUITests.swift; sourceTree = "<group>"; };
 		18BE5D1229FB6D0E0041158E /* MySubjectsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySubjectsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18BE5D2029FB6D3F0041158E /* Subjects.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Subjects.xcdatamodel; sourceTree = "<group>"; };
+		18BE5D2229FB6D4E0041158E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		18BE5D2429FB993D0041158E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		18BE5D2629FB9FCB0041158E /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,10 @@
 			children = (
 				18BE5CF529FB6D0C0041158E /* MySubjectsApp.swift */,
 				18BE5CF729FB6D0C0041158E /* ContentView.swift */,
+				18BE5D2429FB993D0041158E /* SearchView.swift */,
+				18BE5D1F29FB6D3F0041158E /* Subjects.xcdatamodeld */,
+				18BE5D2629FB9FCB0041158E /* CourseView.swift */,
+				18BE5D2229FB6D4E0041158E /* Persistence.swift */,
 				18BE5CF929FB6D0E0041158E /* Assets.xcassets */,
 				18BE5CFB29FB6D0E0041158E /* Preview Content */,
 			);
@@ -257,8 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BE5D2529FB993D0041158E /* SearchView.swift in Sources */,
 				18BE5CF829FB6D0C0041158E /* ContentView.swift in Sources */,
+				18BE5D2329FB6D4E0041158E /* Persistence.swift in Sources */,
+				18BE5D2129FB6D3F0041158E /* Subjects.xcdatamodeld in Sources */,
 				18BE5CF629FB6D0C0041158E /* MySubjectsApp.swift in Sources */,
+				18BE5D2729FB9FCB0041158E /* CourseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +593,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18BE5D1F29FB6D3F0041158E /* Subjects.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18BE5D2029FB6D3F0041158E /* Subjects.xcdatamodel */,
+			);
+			currentVersion = 18BE5D2029FB6D3F0041158E /* Subjects.xcdatamodel */;
+			path = Subjects.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 18BE5CEA29FB6D0C0041158E /* Project object */;
 }
